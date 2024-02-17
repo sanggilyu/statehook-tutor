@@ -5,7 +5,11 @@ export default function UseIdHook() {
 
   return (
     <div style={{backgroundColor:"green", padding:"5px" }}>
-aaa
+      <label htmlFor={`${id}-name`}>이름</label>
+      <input id={`${id}-name`} />
+      <br />
+      <label htmlFor={`${id}-age`}>나이</label>
+      <input id={`${id}-age`} />
     </div>
   );
 }
